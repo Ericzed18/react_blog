@@ -47,11 +47,12 @@ module.exports = appInfo => {
     csrf:{
       enable:false
     },
-    domainWhiteList:['http://localhost:3000','http://localhost:3001']
+    domainWhiteList:['http://localhost:3000','http://134.175.192.128','http://jesseyan.cn:3000','http://jesseyan.cn']
+
+    //domainWhiteList:['http://134.175.192.128:3000','http://134.175.192.128','http://jesseyan.cn:3000','http://jesseyan.cn']
   };
 
   config.cors={
-    origin:'http://localhost:*',
     credentials:true,//允许Cookies跨域
     allowMethods:'GET,HEAD,PUT,POST,DELETE,PATCH,OPTIONS'
   };

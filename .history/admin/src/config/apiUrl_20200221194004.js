@@ -1,4 +1,4 @@
-let ipUrl = 'http://localhost:7001/admin/'
+let ipUrl = 'http://localhost:3000/admin/'
 //let ipUrl = 'http://jesseyan.cn:7001/admin/'
 
 let servicePath = {

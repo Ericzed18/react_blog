@@ -153,8 +153,8 @@ function AddArticle(props){
                 setIntroducemd(articleInfo.introduce)
                 let tmpInt = marked(articleInfo.introduce)
                 setIntroducehtml(tmpInt)
-                console.log(showDate.valueOf())
-                setShowDate(moment(articleInfo.addTime))
+                console.log(showDate)
+                setShowDate(articleInfo.addTime)
                 console.log(showDate)
                 setSelectType(articleInfo.typeName)
             }
@@ -227,7 +227,6 @@ function AddArticle(props){
                         <Col span={12}>
                             <div className="date-select">
                                 <DatePicker
-                                    defaultValue={moment()}
                                     onChange={(date,dateString)=>{setShowDate(dateString)}}
                                     placeholder="发布日期"
                                     size="large"

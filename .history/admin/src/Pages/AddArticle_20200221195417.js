@@ -227,7 +227,7 @@ function AddArticle(props){
                         <Col span={12}>
                             <div className="date-select">
                                 <DatePicker
-                                    defaultValue={moment()}
+                                    value={showDate}
                                     onChange={(date,dateString)=>{setShowDate(dateString)}}
                                     placeholder="发布日期"
                                     size="large"
