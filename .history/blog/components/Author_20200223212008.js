@@ -11,8 +11,8 @@ const Author = () => {
                 <div>2016级金信保研党</div>
                 <div>SWUFE为数不多的“菜鸟”程序猿</div>
                 <Divider>社交账号</Divider>
-                <div><Avatar size={28} icon="github" className="account" /><a href="https://github.com/Ericzed18">&nbsp;Ericzed18</a></div>
-                <div><Avatar size={28} icon="qq" className="account"/>&nbsp;1056680171</div>
+                <div><Avatar size={28} icon="github" className="account" /><a href="https://github.com/Ericzed18">https://github.com/Ericzed18</a></div>
+                <div><Avatar size={28} icon="qq" className="account"/>QQ:1056680171</div>
 
             </div>
         </div>
