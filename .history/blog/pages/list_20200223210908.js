@@ -37,7 +37,7 @@ const MyList = (list) => {
   return (
     <div>
       <Head>
-        <title>Home</title>
+        <title>推免心得|盐假洁-金信保研经验第一博客</title>
       </Head>
       <Header/>
       <Row className="comm-main" type="flex" justify="center">
@@ -45,7 +45,7 @@ const MyList = (list) => {
           <div className="bread-div">
             <Breadcrumb>
               <Breadcrumb.Item><a href="/">首页</a></Breadcrumb.Item>
-              <Breadcrumb.Item>{mylist.typeName}</Breadcrumb.Item>
+              <Breadcrumb.Item>{mylist[0].typeName}</Breadcrumb.Item>
             </Breadcrumb>
           </div>
           <List

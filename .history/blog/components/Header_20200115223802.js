@@ -34,7 +34,7 @@ const handleClick=(e)=>{
             <Row type="flex" justify="center">
                 <Col xs={24} sm={24} md={10} lg={15} xl={12}>
                     <span className="header-logo">盐假洁</span>
-                    <span className="header-txt">保研，没想象中那么难</span>
+                    <span className="header-txt">每天写一点小总结，帮助他人，快乐自我~</span>
                 </Col>
                 <Col xs={0} sm={0} md={14} lg={8} xl={6}>
                     <Menu mode="horizontal" onClick={handleClick}>

@@ -6,9 +6,7 @@ const Author = () => {
         <div className="author-div comm-box">
             <div><Avatar size={100} src="http://image.jesseyan.cn/8c3785ad459bc5f744ac0efbec83d1a8"/></div>
             <div className="author-introduction">
-                <div className="author-name">盐假洁</div>
-                <div>2016级金信保研党</div>
-                <div>可能是财大为数不多的“菜鸟”程序猿</div>
+                目前已保研至xxxx大学，因为想用markdown写文章，脱离现有的平台，所以狠下心来做网站~
                 <Divider>社交账号</Divider>
                 <div><Avatar size={28} icon="github" className="account" /><a href="https://github.com/Ericzed18">https://github.com/Ericzed18</a></div>
                 <div><Avatar size={28} icon="qq" className="account"/>QQ:1056680171</div>

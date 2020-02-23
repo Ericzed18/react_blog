@@ -1,20 +1,22 @@
-import React,{useState,useEffect} from 'react'
+import React,{useState} from 'react'
 import Head from 'next/head'
-import {Row,Col,List,Icon,Breadcrumb} from 'antd'
+import Link from 'next/link'
+import {Row,Col,List,Icon} from 'antd'
+import axios from 'axios'
 import Header from '../components/Header'
 import Author from '../components/Author'
 import Advert from '../components/Advert'
 import Footer from '../components/Footer'
-
-import axios from 'axios'
+import '../static/style/pages/index.css'
 import servicePath from '../config/apiUrl'
-import Link from 'next/link'
 
 import marked from 'marked'
 import hljs from 'highlight.js'
 import 'highlight.js/styles/monokai-sublime.css'
 
-const MyList = (list) => {
+
+
+const Home = (list) => {
 
   const [mylist,setMyList] = useState(list.data)
   const renderer=new marked.Renderer()
@@ -30,9 +32,6 @@ const MyList = (list) => {
       return hljs.highlightAuto(code).value
     }
   })
-  useEffect(()=>{
-    setMyList(list.data)
-  })
 
   return (
     <div>
@@ -42,12 +41,6 @@ const MyList = (list) => {
       <Header/>
       <Row className="comm-main" type="flex" justify="center">
         <Col className="comm-left" xs={24} sm={24} md={16} lg={18} xl={14}>
-          <div className="bread-div">
-            <Breadcrumb>
-              <Breadcrumb.Item><a href="/">首页</a></Breadcrumb.Item>
-              <Breadcrumb.Item>视频教程</Breadcrumb.Item>
-            </Breadcrumb>
-          </div>
           <List
             header={<div>最新日志</div>}
             itemLayout="vertical"
@@ -63,7 +56,6 @@ const MyList = (list) => {
                   <span><Icon type="calendar"/>{item.addTime}</span>
                   <span><Icon type="folder"/>{item.typeName}</span>
                   <span><Icon type="fire"/>{item.view_count}人</span>
-
                 </div>
                 <div className="list-context"
                   dangerouslySetInnerHTML={{__html:marked(item.introduce)}}
@@ -82,15 +74,17 @@ const MyList = (list) => {
   )
 }
 
-MyList.getInitialProps = async (context)=>{
-  let id = context.query.id
+Home.getInitialProps=async ()=>{
   const promise=new Promise((resolve)=>{
-    axios(servicePath.getListById+id).then(
-      (res)=>resolve(res.data)
+    axios(servicePath.getArticleList).then(
+      (res)=>{
+        console.log('------>',res.data)
+        resolve(res.data)
+      }
     )
   })
 
   return await promise
 }
 
-export default MyList
+export default Home
