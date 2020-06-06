@@ -10,4 +10,4 @@ const Advert = () =>{
 
 }
 
-export default Advert
+export default Advertz
