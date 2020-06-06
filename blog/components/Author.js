@@ -4,7 +4,7 @@ import '../static/style/components/author.css'
 const Author = () => {
     return (
         <div className="author-div comm-box">
-            <div><Avatar size={100} src="http://image.jesseyan.cn/8c3785ad459bc5f744ac0efbec83d1a8"/></div>
+            <div><Avatar size={100} src="https://image.jesseyan.cn/8c3785ad459bc5f744ac0efbec83d1a8"/></div>
             <div className="author-introduction">
                 <div className="author-name">盐假洁</div>
                 <div>2016级金信保研党</div>

@@ -1,5 +1,5 @@
 //let ipUrl = 'http://localhost:7001/admin/'
-let ipUrl = 'http://localhost:7001/admin/'
+let ipUrl = 'https://jesseyan.cn:7001/admin/'
 
 let servicePath = {
     checkLogin:ipUrl+'checkLogin',//检查用户名密码
