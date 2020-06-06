@@ -1,4 +1,4 @@
-let ipUrl = 'http://jesseyan.cn:7001/default/'
+let ipUrl = 'https://jesseyan.cn:7001/default/'
 
 let servicePath = {
     getArticleList:ipUrl+'getArticleList',//首页接口

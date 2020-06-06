@@ -47,7 +47,8 @@ module.exports = appInfo => {
     csrf:{
       enable:false
     },
-    domainWhiteList:['http://www.jesseyan.cn:3000','http://134.175.192.128']
+    domainWhiteList:['http://localhost:3000','http://134.175.192.128','https://jesseyan.cn:3000','https://jesseyan.cn']
+    //domainWhiteList:['http://134.175.192.128:3000','http://134.175.192.128','http://jesseyan.cn:3000','http://jesseyan.cn']
   };
 
   config.cors={
